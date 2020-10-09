@@ -43,7 +43,7 @@ function getUserInfo() {
 // 封装函数 渲染用户头像
 function renderAvatar(user) {
     // 设置内容 利用逻辑中断 
-    var name = user.username || user.nickname
+    var name = user.nickname || user.username;
     $('#welcome').html('欢迎' + name);
 
     // 判断服务器里是否有头像 如果有 则显示出来 同时让a隐藏

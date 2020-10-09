@@ -1,5 +1,5 @@
 $.ajaxPrefilter(function(options) {
-    console.log(options);
+    // console.log(options);
     options.url = 'http://ajax.frontend.itheima.net' + options.url
 
     // 设置有权限的请求头部
